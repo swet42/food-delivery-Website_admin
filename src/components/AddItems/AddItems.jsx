@@ -54,7 +54,7 @@ const AddItems = () => {
         payload.append(key, val);
       });
       const res = await axios.post(
-        'https://swet42-food-delivery-website-backen.vercel.app/api/items',
+        'https://swet42-food-delivery-website-backend.onrender.com/api/items',
         payload,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
