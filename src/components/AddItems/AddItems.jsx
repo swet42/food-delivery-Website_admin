@@ -54,7 +54,7 @@ const AddItems = () => {
         payload.append(key, val);
       });
       const res = await axios.post(
-        'http://localhost:4000/api/items',
+        'https://food-delivery-websitefrontend-verce.vercel.app/api/items',
         payload,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
